@@ -70,10 +70,10 @@ jobs:
           key: backend-build
 
 workflow:
- default:          
-   jobs:
-     - build-frontend
-     - build-backend
+  default:          
+    jobs:
+      - build-frontend
+      - build-backend
 
   test-frontend:
     docker:
