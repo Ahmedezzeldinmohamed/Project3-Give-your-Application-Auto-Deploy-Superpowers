@@ -69,6 +69,12 @@ jobs:
           paths: [backend/node_modules]
           key: backend-build
 
+workflow:
+ default:          
+   jobs:
+     - build-frontend
+     - build-backend
+
   test-frontend:
     docker:
       # Docker image here
